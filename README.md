@@ -36,5 +36,5 @@ SentimentAI es una aplicación web que utiliza inteligencia artificial para anal
 ### Instalación
 1. Clona este repositorio:
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone <https://github.com/eleecash/SentimentAI.git>
    cd SentimentAI
