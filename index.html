@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de Sentimientos AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <h1>Sentiment<span>AI</span></h1>
+            </div>
+            <p class="tagline">Análisis de emociones en tiempo real</p>
+        </div>
+
+        <div class="main-content">
+            <div class="input-card">
+                <div class="input-header">
+                    <i class="fas fa-comment-dots"></i>
+                    <h2>Analiza tu texto</h2>
+                </div>
+                <textarea 
+                    id="comment" 
+                    placeholder="Escribe tu comentario aquí..."
+                    rows="5"
+                ></textarea>
+                <button onclick="analyzeSentiment()" class="analyze-btn">
+                    <i class="fas fa-magic"></i>
+                    Analizar Sentimiento
+                </button>
+            </div>
+
+            <div class="results-container">
+                <div class="result-card">
+                    <div class="result-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Resultado del Análisis</h3>
+                    </div>
+                    <div id="result" class="sentiment-box pulse">
+                        <!-- Resultado aquí -->
+                    </div>
+                </div>
+
+                <div class="history-card">
+                    <div class="history-header">
+                        <i class="fas fa-history"></i>
+                        <h3>Historial Reciente</h3>
+                    </div>
+                    <div id="history" class="history-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
